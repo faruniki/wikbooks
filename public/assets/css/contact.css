@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    margin: 0;
+    background-color: #000;
+}
+
+.container {
+    height: 640px;
+    width: 100%;
+    background-size: cover;
+    background-image: url('../img/bg-1.jpg');    
+}
+
+.gradient {
+    width: 100%;
+    height: 540px;
+    /* margin-top: 270px; */
+}
+
+.headernav {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+    margin-right: 60px;
+    margin-left: 90px;
+    margin-bottom: 40px;
+}
+
+.logo {
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: #FFF;
+    display: flex;
+    letter-spacing: 1px;
+    margin-top: 5px;
+}
+
+.navbar {
+    margin-top: 5px;
+}
+
+.navbar a {
+    text-decoration: none;
+}
+
+.navbar li {
+    display: inline;
+    padding: 5px 10px;
+    margin: 0px 20px 0px 20px;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    color: #FFF;
+    letter-spacing: 1px;
+}
+
+.navbar li:hover{
+    /* text-decoration: underline;
+    text-decoration-color: #60bd71;
+    text-decoration-thickness: 2px; */
+    background-color: #FFF;
+    border-radius: 100px;
+    border: solid 0px;
+    color: rgb(87, 87, 87);
+}
+
+
+.bg-wk {
+    margin-top: -10px;
+    width: 100%;
+    display: flex;
+    background-size: cover;
+    background-position: center;
+}
+
+.desk {
+    margin: auto;
+    margin-bottom: 100px;
+    width: 800px;
+    height: 600px;
+    text-align: center;
+}
+
+.desk p {
+    color: #FFF;
+}
+
+.desk .welcome {
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: #FFF;
+}
+
+.desk .wikbooks {
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    font-size: 60px;
+    color: #FFF;
+    font-style: italic;
+    margin-top: -50px;
+}
+
+.desk .desk1 {
+    margin-top: 0px;
+}
+
+.desk .desk1-atas {
+    margin-top: 0px;
+    padding-bottom: 20px;
+}
+
+.howto {
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #FFF;
+    padding-top: 40px;
+    font-style: italic;
+}
+
+.judul-contact {
+    font-family: 'Montserrat', 'sans-serif';
+    font-weight: 600;
+    font-size: 20px;
+    color: #FFF;
+}
+
+.isi-contact {
+    font-family: 'Montserrat', 'sans-serif';
+    font-weight: 500;
+    font-size: 12px;
+    color: #FFF;
+    line-height: 30px;
+}
+
+.gmaps {
+    margin-top: -500px;
+    margin-bottom: 100px;
+    width: 600px;
+    border-radius: 5px;
+}
+
+.footercoi {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 140px;
+    margin-top: 90px;
+}
+
+.footercoi div {
+    width: 160px;
+    height: 300px;
+    /* background-color: red; */
+    font-family: 'Montserrat', 'sans-serif';
+}
+
+.footercoi div ul li {
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 30px;
+}
+
+.footercoi .footlogo {
+    width: 260px;
+    height: 250px;
+}
+
+.footercoi .footlogo div {
+    height: 125px;
+    width: 260px;
+}
+
+.footercoi .footlogo .ea {
+    /* background-color: blue; */
+    display: flex;
+}
+
+.footercoi .footlogo .ea img {
+    width: 50px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.footercoi .footlogo .ea .wikbooksfoot {
+    font-family: 'Montserrat', 'sans-serif';
+    font-weight: 600;
+    font-size: 16px;
+    color: #FFF;
+    position: absolute;
+    margin-left: 85px;
+    margin-top: -58px;
+}
+
+.eaa {
+    margin-top: -50px;
+
+}
+
+.judul2-ea {
+    font-family: 'Montserrat', 'sans-serif';
+    font-weight: 600;
+    font-size: 10px;
+    color: #FFF;
+    margin-left: 28px;
+    padding-top: 10px;
+}
+
+.desk2-ea {
+    font-family: 'Montserrat', 'sans-serif';
+    font-weight: 500;
+    font-size: 10px;
+    color: #FFF;
+    margin-left: 28px;
+}
+
+.footercoi .footlogo .ea .wikbooksfoot2 {
+    font-family: 'Montserrat', 'sans-serif';
+    font-weight: 500;
+    font-size: 10px;
+    color: #FFF;
+    position: absolute;
+    margin-left: 87px;
+    margin-top: -33px;
+}
+
+
+.footercoi div ul p {
+    color: white;
+    font-weight: 600;
+    font-size: 13px;
+}
+
+.footercoi div ul li a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+.footercoi div ul li a:hover {
+    color: #5abf6d;
+}

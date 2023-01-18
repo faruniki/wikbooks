@@ -11,10 +11,13 @@
                 <label for="email" class="labelcoi labelemail">Email</label><br>
                 <input type="text" class="inputform" name="email" id="" placeholder="Your Email"><br><br><br>
                 <label for="password" class="labelcoi">Password</label><br>
-                <input type="password" class="inputform" name="password" id="" placeholder="Your Password">
+                <input type="password" class="inputform" name="password" id="" placeholder="Your Password"><br><br><br>
+                <input type="checkbox" name="checkboxcoi" class="checkcoi">
+                <label for="checkboxcoi" class="checklabel">Remember Me</label>
                 <br><br><br>
-                
+                <button type="submit" class="submitcoi">Login</button>
             </form>
+            <p class="donthave">Don't have an account? <a href="/register">Register</a> first</p>
             </center>
             
         </div>

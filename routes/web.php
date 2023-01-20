@@ -1,6 +1,11 @@
 <?php
 
+use App\Http\Controllers\DashboardController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\EbookController;
+use App\Http\Controllers\LoginController;
+use App\Http\Controllers\RegisterController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -13,22 +18,16 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-});
+Route::get('/', [EbookController::class, 'index'])->name('index');
+Route::get('/books', [EbookController::class, 'books'])->name('books');
+Route::get('/contact', [EbookController::class, 'contact'])->name('contact');
+Route::get('/home', [EbookController::class, 'user'])->name('user');
+Route::get('/home/selected', [EbookController::class, 'selected'])->name('selected');
 
-Route::get('/books', function () {
-    return view('books');
-});
+Route::get('/login', [LoginController::class, 'login'])->name('login');
+Route::post('/postLogin', [LoginController::class, 'postLogin'])->name('loginOut');
+Route::post('/logout', [LoginController::class, 'logout'])->name('logout');
 
-Route::get('/contact', function () {
-    return view('contact');
-});
 
-Route::get('/login', function () {
-    return view('login');
-});
-
-Route::get('/register', function () {
-    return view('register');
-});
+Route::get('/register', [RegisterController::class, 'register'])->name('register');
+Route::post('/registerinput', [RegisterController::class, 'registerAccount'])->name('registerInput');

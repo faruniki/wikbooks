@@ -7,7 +7,8 @@
         <div class="kiri">
             <a href="/" class="linklogo"><p class="wikbooks">WIKBOOKS&#169;</p></a>
             <center>
-            <form action="" class="formlogin">
+            <form action="{{route('registerInput')}}" class="formlogin" method="post">
+                @csrf
                 <label for="name" class="labelcoi labelemail">Name</label><br>
                 <input type="text" class="inputform" name="name" id="" placeholder="Your Name"><br><br>
                 <label for="email" class="labelcoi">Email</label><br>
@@ -17,9 +18,9 @@
                 <label for="password" class="labelcoi labelemail">Password</label><br>
                 <input type="password" class="inputform" name="password" id="" placeholder="Your Password"><br><br>
                 <br><br> 
-                <button type="submit" class="submitcoi">Register</button>
+                <button type="submit" class="submitcoi" href="/login">Register</button>
             </form>
-            <p class="donthave">Already have an account? <a href="/login">Login</a></p>
+            <p class="donthave">Already have an account? <a href="{{route('login')}}">Login</a></p>
             </center>
             
         </div>

@@ -14,9 +14,24 @@ class EbookController extends Controller
      */
     public function index()
     {
-        //
+        return view('index');
     }
 
+    public function books()
+    {
+        return view('books');
+    }
+
+    public function contact()
+    {
+        return view('contact');
+    }
+
+    public function user(){
+        return view('user');
+    }
+
+    
     /**
      * Show the form for creating a new resource.
      *

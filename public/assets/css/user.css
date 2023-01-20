@@ -107,6 +107,12 @@ body {
     text-decoration: none;
 }
 
+.kanan a:hover {
+    color: #5abf6d;
+    max-width: fit-content;
+    display: block;
+}
+
 .kanan .title:hover {
     color: #5abf6d;
     max-width: fit-content;

@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    margin: 0;
+    background-color: #000;
+}
+
+.nav-user ul {
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+.nav-user ul a {
+    text-decoration: none;
+}
+
+.nav-user ul li {
+    color: white;
+    display: inline;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    padding: 3px 14px;
+    border-radius: 100px;
+    border: solid 1px #FFF;
+    max-width: fit-content;
+        margin: 0px 20px;
+}
+
+.nav-user ul li:hover {
+    background-color: #FFF;
+    border-radius: 100px;
+    border: solid 1px #FFF;
+    color: #000;
+}
+
+.nav-user ul .logo {
+    font-size: 20px;
+    border: solid 1px #000;
+}
+
+.nav-user ul .logo:hover {
+    border: solid 1px #000;
+    color: #FFF;
+    background-color: #00000000;
+}

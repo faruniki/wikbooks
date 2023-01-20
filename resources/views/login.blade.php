@@ -9,6 +9,12 @@
             <center>
             <form action="{{route('loginOut')}}" class="formlogin" method="post">
                 @csrf
+                @if (Session::get('notAllowed'))
+                <div class="alert alert-danger">
+                  {{ Session::get('notAllowed')}}
+                </div>
+                @endif
+
                 <label for="email" class="labelcoi labelemail">Email</label><br>
                 <input type="text" class="inputform" name="email" id="" placeholder="Your Email"><br><br><br>
                 <label for="password" class="labelcoi">Password</label><br>

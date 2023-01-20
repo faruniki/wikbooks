@@ -31,6 +31,9 @@ class EbookController extends Controller
         return view('user');
     }
 
+    public function selected(){
+        return view('selected');
+    }
     
     /**
      * Show the form for creating a new resource.

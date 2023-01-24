@@ -3,6 +3,8 @@
 
     <link rel="stylesheet" href="{{asset('assets/css/login.css')}}">
 
+    
+
     <div class="container">
         <div class="kiri">
             <a href="/" class="linklogo"><p class="wikbooks">WIKBOOKS&#169;</p></a>
@@ -10,7 +12,7 @@
             <form action="{{route('loginOut')}}" class="formlogin" method="post">
                 @csrf
                 @if (Session::get('notAllowed'))
-                <div class="alert alert-danger">
+                <div class="alert alert-danger eaeaea">
                   {{ Session::get('notAllowed')}}
                 </div>
                 @endif

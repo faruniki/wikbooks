@@ -74,6 +74,7 @@
                     <li><a href="/books">Books</a></li>
                     <li><a href="/contact">Contact</a></li>
                     <li><a href="/login">Login</a></li>
+                    <li><a href="/admin">Admin</a></li>
                 </ul>
             </div>
         </div>

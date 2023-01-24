@@ -10,7 +10,7 @@
             <ul>
                 <a href="/home"><li>HOME</li></a>
                 <a href="/home"><li class="logo">WIKBOOKS&#169;</li></a>
-                <a href="/login"><li>LOGOUT</li></a>
+                <a href="{{route('logout')}}"><li>LOGOUT</li></a>
             </ul>
             </nav> 
         </center>
@@ -208,6 +208,7 @@
                     <p class="special-3"><b>Pages</b></p>
                     <li><a href="/home">Home</a></li>
                     <li><a href="/login">Logout</a></li>
+                    <li><a href="/admin">Admin</a></li>
                 </ul>
             </div>
         </div>

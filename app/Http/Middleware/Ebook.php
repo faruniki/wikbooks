@@ -20,6 +20,6 @@ class Ebook
         if (Auth::check()) {
             return $next($request);
         }
-        return redirect('/login')->with('notAllowed', 'Silahkan login terlebih dahulu!');
+        return redirect('/login')->with('notAllowed', 'You need to login first!');
     }
 }

@@ -7,6 +7,7 @@ use App\Http\Controllers\LoginController;
 use App\Http\Controllers\RegisterController;
 
 
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -21,13 +22,14 @@ use App\Http\Controllers\RegisterController;
 Route::middleware('Ebook')->group(function () {
     Route::get('/home', [EbookController::class, 'user'])->name('user');
     Route::get('/home/selected', [EbookController::class, 'selected'])->name('selected');
-    Route::post('/logout', [LoginController::class, 'logout'])->name('logout');
+    Route::get('/logout', [LoginController::class, 'logout'])->name('logout');
 });
+
+Route::get('/admin', [EbookController::class, 'admin'])->name('admin');
 
 Route::middleware('isGuest')->group(function () {
     Route::get('/login', [LoginController::class, 'login'])->name('login');
     Route::post('/postLogin', [LoginController::class, 'postLogin'])->name('loginOut');
-    Route::post('/logout', [LoginController::class, 'logout'])->name('logout');
 
 
     Route::get('/register', [RegisterController::class, 'register'])->name('register');

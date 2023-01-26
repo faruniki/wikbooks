@@ -35,8 +35,8 @@ class EbookController extends Controller
         return view('selected');
     }
 
-    public function admin(){
-        return view('admin');
+    public function loginadmin(){
+        return view('loginadmin');
     }
     
     /**

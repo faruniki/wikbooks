@@ -25,7 +25,7 @@ Route::middleware('Ebook')->group(function () {
     Route::get('/logout', [LoginController::class, 'logout'])->name('logout');
 });
 
-Route::get('/admin', [EbookController::class, 'admin'])->name('admin');
+Route::get('/loginadmin', [EbookController::class, 'loginadmin'])->name('loginadmin');
 
 Route::middleware('isGuest')->group(function () {
     Route::get('/login', [LoginController::class, 'login'])->name('login');
